@@ -26,9 +26,9 @@ describe('Central de Atendimento ao Cliente TAT', () => {
     cy.get('#email')
       .as('textField')
       .should('be.visible')
-      .type('anabeatrizcaoliveira@gmail.com')
+      .type('example@gmail.com')
     cy.get('@textField')
-      .should('have.value', 'anabeatrizcaoliveira@gmail.com')
+      .should('have.value', 'example@gmail.com')
 
     cy.get('#open-text-area')
       .as('textField')
